@@ -1,0 +1,1 @@
+//Basic one page business website with multiple functionalities and mobile reponsive at 640px max-width.
