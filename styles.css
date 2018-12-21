@@ -1,75 +1,88 @@
-body{
+body {
     background: whitesmoke;
     font-family: "aktiv-grotesk", sans-serif;
 }
-h4{
+
+h4 {
     font-size: 20px;
-    color:white;
-    background: rgba(128,128,0, 0.5);
+    color: white;
+    background: rgba(128, 128, 0, 0.5);
     display: inline-block;
     position: relative;
     left: 660px;
-}
-#blink{
-    display: inline-block;
-    animation: blink 0.5s infinite;
-} 
-@keyframes blink{
-    to {opacity: .0;}
+    display: none
 }
 
-nav{
+#blink {
+    display: inline-block;
+    animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+    to {
+        opacity: .0;
+    }
+}
+
+nav {
     width: 1424px;
-    background-color:rgba(128,128,128,0.7);
+    background-color: rgba(128, 128, 128, 0.7);
     position: relative;
     display: flex;
     flex-direction: row;
     height: 60px;
 }
-nav h1{
+
+nav h1 {
     color: aquamarine;
 }
-ul{
+
+ul {
     width: 1200px;
     display: flex;
     justify-content: flex-end;
     list-style: none;
 }
-ul li{
+
+ul li {
     font-size: 13px;
     margin-top: 5px;
     margin-left: 45px;
     font-weight: 650;
     color: whitesmoke;
 }
-ul li:hover{
+
+ul li:hover {
     transform: scale(1.3);
-    color: rgba(128,128,0, 1); 
+    color: rgba(128, 128, 0, 1);
 }
-nav h1{
+
+nav h1 {
     margin-left: 45px;
     border: 2px dashed antiquewhite;
     font-size: 20px
 }
-a{
+
+a {
     text-decoration: none;
     color: inherit;
 }
-div#f-img{
-    background-image:url("https://images.pexels.com/photos/990818/pexels-photo-990818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+
+div#f-img {
+    background-image: url("https://images.pexels.com/photos/990818/pexels-photo-990818.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width:100%;
+    width: 100%;
     height: 600px;
     min-height: 100%;
     position: relative;
-    opacity: 1;   
+    opacity: 1;
 }
 
 
-#content h1{
+#content h1 {
     background: rgba(0, 0, 0, 0.7);
     color: whitesmoke;
     font-weight: bold;
@@ -78,10 +91,11 @@ div#f-img{
     left: 50%;
     transform: translate(-50%, -50%)
 }
-#content button{
+
+#content button {
     font-size: 15px;
     height: 30px;
-    background: rgba(128,128,0, 0.5);
+    background: rgba(128, 128, 0, 0.5);
     color: whitesmoke;
     font-weight: bold;
     position: absolute;
@@ -89,18 +103,20 @@ div#f-img{
     left: 50%;
     transform: translate(-50%, -50%)
 }
-#content button:hover{
+
+#content button:hover {
     background: rgba(0, 0, 0, 1);
 }
 
-#about-us{
+#about-us {
     background: rgba(0, 0, 0, 0.5);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#about-us-img{
+
+#about-us-img {
     background-image: url('https://images.pexels.com/photos/269077/pexels-photo-269077.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-repeat: no-repeat;
     background-size: cover;
@@ -110,8 +126,9 @@ div#f-img{
     height: 400px;
     display: inline-block;
 }
-#about-us p{
-    color:white;
+
+#about-us p {
+    color: white;
     margin: 0 auto;
     text-align: center;
     width: 400px;
@@ -122,14 +139,15 @@ div#f-img{
     padding: 0px 80px 0px 80px;
 }
 
-#second-about-us{
+#second-about-us {
     background: rgba(192, 192, 192, 0.5);
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#about-us-second-img{
+
+#about-us-second-img {
     background-image: url('https://images.pexels.com/photos/1080865/pexels-photo-1080865.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,7 +157,8 @@ div#f-img{
     height: 400px;
     display: inline-block;
 }
-#second-about-us p{
+
+#second-about-us p {
     color: black;
     margin: 0 auto;
     text-align: center;
@@ -151,18 +170,20 @@ div#f-img{
     padding: 0px 80px 0px 80px;
 }
 
-#why-choose-us{
+#why-choose-us {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-#why-choose-us div{
-    background: rgba(240,255,255,0.6);
+
+#why-choose-us div {
+    background: rgba(240, 255, 255, 0.6);
     position: relative;
     height: 300px;
     width: 400px;
 }
-div#fimg{ 
+
+div#fimg {
     background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRv-qe_bvgq3xHe53fsKkyf5KiBd7bXLoFkkU09dPn8yU4WGRbo");
     background-repeat: no-repeat;
     background-size: cover;
@@ -174,9 +195,10 @@ div#fimg{
     border: none;
     border-radius: 50%;
     height: 70px;
-    order:1;
+    order: 1;
 }
-#ability p{
+
+#ability p {
     padding: 0px 20px 0px 20px;
     margin-top: 100px;
     font-size: 17px;
@@ -185,13 +207,14 @@ div#fimg{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-#ability h3{
+
+#ability h3 {
     position: relative;
     top: 90px;
     left: 125px;
 }
 
-div#simg{ 
+div#simg {
     background-image: url("https://killerinnovations.com/wp-content/uploads/2018/09/Innovation-Leadership-Skills-760x405.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -204,7 +227,8 @@ div#simg{
     border-radius: 50%;
     height: 70px;
 }
-#ability-two p{
+
+#ability-two p {
     padding: 0px 20px 0px 20px;
     margin-top: 100px;
     font-size: 17px;
@@ -213,13 +237,14 @@ div#simg{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-#ability-two h3{
+
+#ability-two h3 {
     position: relative;
     top: 90px;
     left: 120px;
 }
 
-div#timg{ 
+div#timg {
     background-image: url("https://www.duocircle.com/wp-content/uploads/2016/01/duocircle_customer_support.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -232,7 +257,8 @@ div#timg{
     border-radius: 50%;
     height: 70px;
 }
-#ability-three p{
+
+#ability-three p {
     padding: 0px 20px 0px 20px;
     margin-top: 100px;
     font-size: 17px;
@@ -241,12 +267,14 @@ div#timg{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-#ability-three h3{
+
+#ability-three h3 {
     position: relative;
     top: 90px;
     left: 140px;
 }
-div#four-img{ 
+
+div#four-img {
     background-image: url("https://media.licdn.com/mpr/mpr/gcrc/dms/image/C4D12AQGy1bdCfpRBTQ/article-cover_image-shrink_423_752/0?e=2131920000&v=beta&t=rPrFVztVquRLA5vxeTMt4HU1UIRQV946i5yuT4DVuBk");
     background-repeat: no-repeat;
     background-size: cover;
@@ -258,9 +286,10 @@ div#four-img{
     border: none;
     border-radius: 50%;
     height: 70px;
-    order:2;
+    order: 2;
 }
-#ability-four p{
+
+#ability-four p {
     padding: 0px 20px 0px 20px;
     margin-top: 100px;
     font-size: 17px;
@@ -269,13 +298,14 @@ div#four-img{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-#ability-four h3{
+
+#ability-four h3 {
     position: relative;
     top: 90px;
     left: 165px;
 }
 
-div#five-img{ 
+div#five-img {
     background-image: url("http://cdn.dezzain.com/1/2018/06/run-out-of-time-meeting.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,7 +318,8 @@ div#five-img{
     border-radius: 50%;
     height: 70px;
 }
-#ability-five p{
+
+#ability-five p {
     padding: 0px 20px 0px 20px;
     margin-top: 100px;
     font-size: 17px;
@@ -297,13 +328,14 @@ div#five-img{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-#ability-five h3{
+
+#ability-five h3 {
     position: relative;
     top: 90px;
     left: 160px;
 }
 
-div#six-img{ 
+div#six-img {
     background-image: url("http://towerlanguage.com/wp-content/uploads/2018/01/business-meeting-900x400.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -315,9 +347,10 @@ div#six-img{
     border: none;
     border-radius: 50%;
     height: 70px;
-    order:2;
+    order: 2;
 }
-#ability-six p{
+
+#ability-six p {
     padding: 0px 20px 0px 20px;
     margin-top: 100px;
     font-size: 17px;
@@ -326,19 +359,22 @@ div#six-img{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-#ability-six h3{
+
+#ability-six h3 {
     position: relative;
     top: 90px;
     left: 130px;
 }
-#reviews{
+
+#reviews {
     display: flex;
     justify-content: space-evenly;
     position: relative;
     width: 100%;
     height: 400px;
 }
-#reviews #person-1{
+
+#reviews #person-1 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -347,7 +383,8 @@ div#six-img{
     height: 400px;
     width: 22%;
 }
-#person-1 #photo-1{
+
+#person-1 #photo-1 {
     margin-top: 20px;
     width: 100px;
     height: 100px;
@@ -358,7 +395,7 @@ div#six-img{
     background-size: cover;
 }
 
-#reviews #person-2{
+#reviews #person-2 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -367,17 +404,19 @@ div#six-img{
     height: 400px;
     width: 22%;
 }
-#person-2 #photo-2{
+
+#person-2 #photo-2 {
     margin-top: 20px;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-image: url("https://images.pexels.com/photos/213117/pexels-photo-213117.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+    background-image: url("https://images.pexels.com/photos/997217/pexels-photo-997217.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#reviews #person-3{
+
+#reviews #person-3 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -386,7 +425,8 @@ div#six-img{
     height: 400px;
     width: 22%;
 }
-#person-3 #photo-3{
+
+#person-3 #photo-3 {
     margin-top: 20px;
     width: 100px;
     height: 100px;
@@ -396,7 +436,8 @@ div#six-img{
     background-repeat: no-repeat;
     background-size: cover;
 }
-#reviews #person-4{
+
+#reviews #person-4 {
     display: flex;
     justify-content: flex-start;
     flex-direction: column;
@@ -405,7 +446,8 @@ div#six-img{
     height: 400px;
     width: 22%;
 }
-#person-4 #photo-4{
+
+#person-4 #photo-4 {
     margin-top: 20px;
     width: 100px;
     height: 100px;
@@ -415,50 +457,58 @@ div#six-img{
     background-repeat: no-repeat;
     background-size: cover;
 }
-.stars{
+
+.stars {
     margin-top: 15px;
 }
-.checked{
+
+.checked {
     color: orange;
 }
-#reviews p{
+
+#reviews p {
     font-size: 17px;
     font-weight: 400;
     padding: 0px 20px;
 }
-div#recommend{
-    background: rgba(122, 130, 149,1);
-    height: 300px;
+
+div#recommend {
+    background: rgba(122, 130, 149, 1);
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-div#recommend h2{
+
+div#recommend h2 {
     color: white;
     font-weight: 500;
     font-size: 25px;
     line-height: inherit;
 }
-div#recommend p{
-    color:white;
+
+div#recommend p {
+    color: white;
     font-weight: 300;
     font-size: 18px;
     padding: 0px 200px;
     line-height: 30px;
 }
-div#logo{
+
+div#logo {
     width: 75%;
     margin: 0 auto;
     display: flex;
     height: 100%;
     justify-content: space-evenly;
 }
-i{
-    margin-top:20px;
+
+div#recommend i {
+    font-size: 60px
 }
 
-hr{
-    background:rgba(0, 0, 0, 0.7);
+hr {
+    background: rgba(0, 0, 0, 0.7);
     border: 1px solid;
     margin: 20px 100px 10px 100px;
     height: 5px;
@@ -468,97 +518,111 @@ hr{
 div#s-img {
     background-image: url("https://images.pexels.com/photos/872957/pexels-photo-872957.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    width:100%;
+    width: 100%;
     height: 600px;
     min-height: 100%;
     position: relative;
     opacity: 0.8;
-    display:flex;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: space-evenly;  
+    justify-content: space-evenly;
 }
-#package-one{
+
+#package-one {
     position: relative;
-    background: rgba(255,218,185, 0.7);
+    background: rgba(255, 218, 185, 0.7);
     height: 450px;
     width: 300px;
-    border: 1px solid black; 
+    border: 1px solid black;
 }
-#package-one:hover{
+
+#package-one:hover {
     transform: scale(1.2);
-    background: rgba(255,218,185, 1);
+    background: rgba(255, 218, 185, 1);
 }
-#package-one h1, p{
+
+#package-one h1,
+p {
     text-align: center;
     font-weight: 600;
     font-size: 20px
 }
-#package-one button{
+
+#package-one button {
     position: absolute;
     bottom: 10px;
     left: 100px;
     font-size: 20px;
-    background: rgba(128,128,0, 0.5);
+    background: rgba(128, 128, 0, 0.5);
     color: black;
     font-weight: bold;
 }
 
-#package-two{
-    background: rgba(255,218,185, 0.7);
+#package-two {
+    background: rgba(255, 218, 185, 0.7);
     position: relative;
     height: 450px;
     width: 300px;
-    border: 1px solid black; 
+    border: 1px solid black;
 }
-#package-two:hover{
+
+#package-two:hover {
     transform: scale(1.2);
-    background: rgba(255,218,185, 1);
+    background: rgba(255, 218, 185, 1);
 }
-#package-two h1, p{
+
+#package-two h1,
+p {
     text-align: center;
     font-weight: 600;
     font-size: 20px
 }
-#package-two button{
+
+#package-two button {
     position: absolute;
     bottom: 10px;
     left: 100px;
     font-size: 20px;
-    background: rgba(128,128,0, 0.5);
+    background: rgba(128, 128, 0, 0.5);
     color: black;
     font-weight: bold;
 }
 
-#package-three{
+#package-three {
     position: relative;
-    background: rgba(255,218,185, 0.7);
+    background: rgba(255, 218, 185, 0.7);
     height: 450px;
     width: 300px;
-    border: 1px solid black; 
+    border: 1px solid black;
 }
-#package-three:hover{
+
+#package-three:hover {
     transform: scale(1.2);
-    background: rgba(255,218,185, 1);
+    background: rgba(255, 218, 185, 1);
 }
-#package-three h1, p{
+
+#package-three h1,
+p {
     text-align: center;
     font-weight: 600;
     font-size: 20px
 }
-#package-three button{
+
+#package-three button {
     position: absolute;
     bottom: 10px;
     left: 85px;
     font-size: 20px;
-    background: rgba(128,128,0, 0.5);
+    background: rgba(128, 128, 0, 0.5);
     color: black;
     font-weight: bold;
 }
-.modal{
+
+.modal {
     display: none;
     position: fixed;
     z-index: 100;
@@ -567,12 +631,13 @@ div#s-img {
     width: 100%;
     height: 100%;
     overflow: auto;
-    background: rgb(0,0,0);
-    background: rgba(0,0,0,0.1);
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.1);
     align-items: center;
 }
-.modal-content{
-    background: rgba(255,255,255,1);
+
+.modal-content {
+    background: rgba(255, 255, 255, 1);
     margin: auto;
     padding: 20px;
     border: 1px solid black;
@@ -583,7 +648,8 @@ div#s-img {
     justify-content: center;
     line-height: 20px;
 }
-.close{
+
+.close {
     color: rgba(192, 192, 192, 1);
     position: absolute;
     right: 10px;
@@ -591,27 +657,26 @@ div#s-img {
     font-size: 28px;
     font-weight: bold;
 }
+
 .close:hover,
-.close:focus{
+.close:focus {
     color: black;
     text-decoration: none;
 }
-.small{
-    width: 40%;
-}   
 
-footer#contact{
+.small {
+    width: 40%;
+}
+
+footer#contact {
     margin-top: 10px;
-    background: rgb(119,136,153, 0.5);
+    background: rgb(119, 136, 153, 0.5);
     height: 500px;
     min-height: 100%;
     position: relative;
 }
-footer h4{
-    position: absolute;
-    top: 0;
-}
-footer #center{
+
+footer #center {
     position: absolute;
     display: flex;
     height: 500px;
@@ -619,35 +684,44 @@ footer #center{
     justify-content: space-around;
     align-items: center;
 }
-#corporation{
+
+#corporation {
     background: rgba(0, 0, 0, 0.5);
     width: 500px;
     height: 350px;
-    color:white;
+    color: white;
     font-weight: bold;
     position: relative;
 }
-form{
-    background: rgba(245,245,245,0.2);
-    width: 500px;
-    height: 350px;
+
+form {
+    background: rgba(245, 245, 245, 0.2);
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    justify-content: space-evenly
 }
-form input{
-    display: block;
-    width: 495px;
+
+form input {
+    width: 100%;
     font-size: 20px;
+    border: none;
 }
-form textarea{
-    width: 495px;
+
+form textarea {
+    width: 100%;
     height: 80px;
     font-size: 15px;
+    border: none;
 }
+
 form p {
     text-align: left;
     font-size: 15px;
     font-weight: 600;
 }
-form button{
+
+form button {
     background: rgba(0, 0, 0, 0.2);
     font-weight: bold;
     font-size: 15px;
@@ -656,67 +730,80 @@ form button{
     width: 100px;
     border: 1px solid black;
 }
-footer i{
+
+footer i {
     position: relative;
     left: 160px;
     margin: 20px 10px;
     display: inline-block;
 }
-#information a i:hover{
+
+#information a i:hover {
     transform: scale(2);
 }
 
-@media (max-width: 640px){
-    nav{
+
+@media (min-width: 566px) and (max-width: 768px) {
+    nav {
         width: 100%;
         display: flex;
         flex-direction: space-evenly;
 
     }
-    nav h1{
+
+    nav h1 {
         padding: 15px;
         margin: 0;
         width: 150px;
     }
-    nav ul > li{
+
+    nav ul>li {
         font-size: 10px;
     }
-    #content h1{
+
+    #content h1 {
         text-align: center;
     }
-    #content button{
+
+    #content button {
         margin-top: 10px;
     }
-    #about-us{
+
+    #about-us {
         display: flex;
         flex-direction: column;
         position: relative;
     }
-    div#about-us-img{
-        display:block;
+
+    div#about-us-img {
+        display: block;
         width: 100%;
     }
-    #about-us > p{
-        margin-top:25px;
+
+    #about-us>p {
+        margin-top: 25px;
         font-size: 18px;
         height: 250px;
         display: block;
         text-align: center;
-        padding:0;
+        padding: 0;
         width: 550px;
     }
-    #second-about-us{
+
+    #second-about-us {
         display: flex;
         flex-direction: column;
         position: relative;
     }
-    div#about-us-second-img{
+
+    div#about-us-second-img {
         position: relative;
         bottom: 250px;
-        display:block;
+        display: block;
         width: 100%;
     }
-    #second-about-us > p{
+
+    #second-about-us>p {
         position: relative;
         top: 430px;
         font-weight: 600;
@@ -724,114 +811,699 @@ footer i{
         height: 250px;
         display: block;
         text-align: center;
-        padding:0;
+        padding: 0;
         width: 550px;
     }
-    #reviews{
+
+    #reviews {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         flex-wrap: wrap;
         height: 100%;
     }
-    #reviews #person-1{
-        width: 50%;
-    }
-    #reviews #person-2{
-        width: 50%;
-    }
-    #reviews #person-3{
-        width: 50%;
-    }
-    #reviews #person-4{
+
+    #reviews #person-1 {
         width: 50%;
     }
 
-    div#recommend{
-        height: 350px;
+    #reviews #person-2 {
+        width: 50%;
     }
-    div#recommend h2{
+
+    #reviews #person-3 {
+        width: 50%;
+    }
+
+    #reviews #person-4 {
+        width: 50%;
+    }
+
+    div#recommend {
+        height: auto;
+    }
+
+    div#recommend h2 {
         text-align: center;
         width: 100%;
         font-size: 20px;
     }
-    div#recommend p{
+
+    div#recommend p {
         width: 100%;
     }
-    div#recommend #logo{
+
+    div#recommend #logo {
         width: 100%;
         height: 400%;
     }
-    div#recommend i{
-        margin-top: 40px
+
+    div#recommend i {
+        font-size: 40px
     }
 
-    #s-img{
+    #s-img {
         position: relative;
         display: flex;
         justify-content: space-evenly;
     }
-    #s-img #package-one{
+
+    #s-img #package-one {
         width: 180px;
         height: 100%;
     }
-    #package-one button{
+
+    #package-one button {
         width: 100%;
-        left:0;
+        left: 0;
         bottom: 0;
         height: 30px;
     }
-    #package-one:hover{
+
+    #package-one:hover {
         transform: scale(1);
-        background: rgba(255,218,185, 1);
+        background: rgba(255, 218, 185, 1);
     }
-    #s-img #package-two{
+
+    #s-img #package-two {
         width: 180px;
         height: 100%;
     }
-    #package-two:hover{
+
+    #package-two:hover {
         transform: scale(1);
-        background: rgba(255,218,185, 1);
+        background: rgba(255, 218, 185, 1);
     }
-    #package-two button{
+
+    #package-two button {
         width: 100%;
-        left:0;
+        left: 0;
         bottom: 0;
         height: 30px;
-    }    
-    #s-img #package-three{
+    }
+
+    #s-img #package-three {
         width: 180px;
         height: 100%;
     }
-    #package-three:hover{
+
+    #package-three:hover {
         transform: scale(1);
-        background: rgba(255,218,185, 1);
+        background: rgba(255, 218, 185, 1);
     }
-    #package-three button{
+
+    #package-three button {
         width: 100%;
-        left:0;
+        left: 0;
         bottom: 0;
         height: 30px;
     }
-    .modal{
+
+    .modal {
         align-items: center;
     }
-    .modal-content{
+
+    .modal-content {
         width: 100%;
         height: 70%;
-    }    
-    footer#contact{
+    }
+
+    footer#contact {
         height: 800px;
     }
-    footer #center{
-        height: 730px;
+
+    footer #center {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    footer h4 {
+        display: none;
+    }
+}
+
+
+@media (min-width: 425px) and (max-width: 565px) {
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: space-evenly;
+
+    }
+
+    nav h1 {
+        padding: 15px;
+        margin: 0;
+        width: 150px;
+    }
+
+    nav ul>li {
+        font-size: 10px;
+    }
+
+    #content h1 {
+        text-align: center;
+    }
+
+    #content button {
+        margin-top: 10px;
+    }
+
+    #about-us {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #content h1 {
+        font-size: 20px;
+    }
+
+    div#about-us-img {
+        display: block;
+        width: 100%;
+    }
+
+    #about-us>p {
+        margin-top: 25px;
+        font-size: 15px;
+        height: 250px;
+        display: block;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #second-about-us {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    div#about-us-second-img {
+        position: relative;
+        bottom: 250px;
+        display: block;
+        width: 100%;
+    }
+
+    #second-about-us>p {
+        position: relative;
+        top: 430px;
+        font-weight: 600;
+        font-size: 15px;
+        height: 250px;
+        display: block;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #reviews {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    #reviews #person-1 {
+        width: 50%;
+    }
+
+    #person-1 p {
+        font-size: 15px;
+    }
+
+    #person-1 h3 {
+        font-size: 15px;
+    }
+
+    #reviews #person-2 {
+        width: 50%;
+    }
+
+    #person-2 p {
+        font-size: 15px;
+    }
+
+    #person-2 h3 {
+        font-size: 15px;
+    }
+
+    #reviews #person-3 {
+        width: 50%;
+    }
+
+    #person-3 h3 {
+        font-size: 15px;
+    }
+
+    #person-3 p {
+        font-size: 15px;
+    }
+
+    #reviews #person-4 {
+        width: 50%;
+    }
+
+    #person-4 h3 {
+        font-size: 15px;
+    }
+
+    #person-4 p {
+        font-size: 15px;
+    }
+
+    div#recommend {
+        height: auto
+    }
+
+    div#recommend h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 17px;
+    }
+
+    div#recommend p {
+        width: 100%;
+        font-size: 15px
+    }
+
+    div#recommend #logo {
+        width: 100%;
+        height: 400%;
+        margin: 20px 0;
+    }
+
+    div#recommend i {
+        font-size: 30px
+    }
+
+    div#s-img {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    #s-img #package-one {
+        width: 300px;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    #package-one button {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: relative;
+        height: 30px;
+    }
+
+    #package-one:hover {
+        transform: scale(1);
+        background: rgba(255, 218, 185, 1);
+    }
+
+    #s-img #package-two {
+        width: 300px;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    #package-two:hover {
+        transform: scale(1);
+        background: rgba(255, 218, 185, 1);
+    }
+
+    #package-two button {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: relative;
+        height: 30px;
+    }
+
+    #s-img #package-three {
+        width: 300px;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    #package-three:hover {
+        transform: scale(1);
+        background: rgba(255, 218, 185, 1);
+    }
+
+    #package-three button {
+        width: 100%;
+        left: 0;
+        position: relative;
+        bottom: 0;
+        height: 30px;
+    }
+
+    .modal {
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 100%;
+        height: 70%;
+    }
+
+    footer#contact {
+        width: auto;
+        height: auto;
+    }
+
+    footer #center {
+        height: auto;
         display: flex;
         flex-direction: column;
     }
-    h4{
-        left:250px;
-    } 
-    #corporation{
+
+    footer h4 {
+        display: none;
+    }
+
+    #corporation {
         margin-top: 100px;
+    }
+
+    #information p {
+        font-size: 15px;
+        padding: 0 100px;
+        line-height: 30px;
+    }
+}
+
+
+@media (max-width: 424px) {
+    nav {
+        width: 100%;
+        display: flex;
+        flex-direction: space-evenly;
+
+    }
+
+    nav h1 {
+        padding: 15px;
+        margin: 0;
+        width: 150px;
+    }
+
+    nav ul>li {
+        font-size: 10px;
+    }
+
+    #content h1 {
+        text-align: center;
+    }
+
+    #content button {
+        margin-top: 10px;
+    }
+
+    #about-us {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    #content h1 {
+        font-size: 20px;
+    }
+
+    div#about-us-img {
+        display: block;
+        width: 100%;
+    }
+
+    #about-us>p {
+        margin-top: 25px;
+        font-size: 15px;
+        height: 250px;
+        display: block;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #second-about-us {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+
+    div#about-us-second-img {
+        position: relative;
+        bottom: 250px;
+        display: block;
+        width: 100%;
+    }
+
+    #second-about-us>p {
+        position: relative;
+        top: 430px;
+        font-weight: 600;
+        font-size: 15px;
+        height: 250px;
+        display: block;
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    #reviews {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: 100%;
+    }
+
+    #reviews #person-1 {
+        width: 50%;
+    }
+
+    #person-1 p {
+        font-size: 15px;
+    }
+
+    #person-1 h3 {
+        font-size: 15px;
+    }
+
+    #reviews #person-2 {
+        width: 50%;
+    }
+
+    #person-2 p {
+        font-size: 15px;
+    }
+
+    #person-2 h3 {
+        font-size: 15px;
+    }
+
+    #reviews #person-3 {
+        width: 50%;
+    }
+
+    #person-3 h3 {
+        font-size: 15px;
+    }
+
+    #person-3 p {
+        font-size: 15px;
+    }
+
+    #reviews #person-4 {
+        width: 50%;
+    }
+
+    #person-4 h3 {
+        font-size: 15px;
+    }
+
+    #person-4 p {
+        font-size: 15px;
+    }
+
+    div#recommend {
+        height: auto
+    }
+
+    div#recommend h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 17px;
+    }
+
+    div#recommend p {
+        width: 100%;
+        font-size: 15px
+    }
+
+    div#recommend #logo {
+        width: 100%;
+        height: 400%;
+        margin: 20px 0;
+    }
+
+    div#recommend i {
+        font-size: 30px
+    }
+
+    div#fimg {
+        left: 120px;
+    }
+
+    #ability h3 {
+        left: 120px
+    }
+
+    div#simg {
+        left: 120px;
+    }
+
+    #ability-two h3 {
+        left: 100px;
+    }
+
+    div#timg {
+        left: 120px;
+    }
+
+    #ability-three h3 {
+        left: 135px;
+    }
+
+    div#four-img {
+        left: 120px;
+    }
+
+    #ability-four h3 {
+        left: 165px
+    }
+
+    div#five-img {
+        left: 120px;
+    }
+
+    #ability-five h3 {
+        left: 155px
+    }
+
+    div#six-img {
+        left: 120px;
+    }
+
+    #ability-six h3 {
+        left: 120px;
+    }
+
+    div#s-img {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        justify-content: space-evenly;
+    }
+
+    #s-img #package-one {
+        width: 300px;
+        height: 100%;
+        margin-bottom: 30px;
+    }
+
+    #package-one button {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: relative;
+        height: 30px;
+    }
+
+    #package-one:hover {
+        transform: scale(1);
+        background: rgba(255, 218, 185, 1);
+    }
+
+    #s-img #package-two {
+        width: 300px;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    #package-two:hover {
+        transform: scale(1);
+        background: rgba(255, 218, 185, 1);
+    }
+
+    #package-two button {
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        position: relative;
+        height: 30px;
+    }
+
+    #s-img #package-three {
+        width: 300px;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+
+    #package-three:hover {
+        transform: scale(1);
+        background: rgba(255, 218, 185, 1);
+    }
+
+    #package-three button {
+        width: 100%;
+        left: 0;
+        position: relative;
+        bottom: 0;
+        height: 30px;
+    }
+
+    .modal {
+        align-items: center;
+    }
+
+    .modal-content {
+        width: 100%;
+        height: 70%;
+    }
+
+    footer#contact {
+        width: auto;
+        height: auto;
+    }
+
+    footer #center {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer h4 {
+        display: none;
+    }
+
+    #corporation {
+        margin-top: 100px;
+    }
+
+    #information p {
+        font-size: 15px;
+        padding: 0 100px;
+        line-height: 30px;
     }
 }
