@@ -41,13 +41,11 @@ function deletingEffect(){
 typingEffect();
 
 function onScroll(){
-    if(window.innerWidth <= 640){
-        nav.style.width = "625px";
-    } 
     if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
         nav.style.background = "black";
         nav.style.position = "fixed" 
         nav.style.zIndex = 99;
+        nav.style.width = "100%"
         for(var i = 0; i < navLi.length; i++){
             navLi[i].style.color = "white";
             navLi[i].style.fontWeight = "bold";
